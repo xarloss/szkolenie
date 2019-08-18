@@ -1,0 +1,25 @@
+{
+  "name": "szkolenie",
+  "version": "1.0.0",
+  "description": "Szkolenie dla rekinkow",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "wyniki": "node tests/scoreTable.js",
+    "test": "node index.js",
+    "zad1": "node zadanie1.js",
+    "zad2": "node zadanie2.js",
+    "zad3": "node zadanie3.js"
+  },
+  "author": "Andrian K",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2"
+  }
+}
