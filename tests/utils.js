@@ -1,5 +1,7 @@
-const chalk = require('chalk');
+const chalk = require('chalk')
+const ErrorLog = require('./error')
 let success = 0
+
 
 function test(name, fn){
     try {
@@ -8,6 +10,7 @@ function test(name, fn){
         console.log('   ' + chalk.green(name))
     } catch(err) {
         console.log('   ' + chalk.red(name))
+        new ErrorLog(err)
     }
 }
 

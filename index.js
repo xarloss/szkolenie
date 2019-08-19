@@ -1,8 +1,9 @@
 const axios = require('axios')
 const score = require('./tests/index')()
+const os = require('os')
 
 const insertScore = {
-    name: 'Adrian',
+    name: os.hostname(),
     score,
     date: new Date()
 }
