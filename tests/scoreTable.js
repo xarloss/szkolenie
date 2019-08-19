@@ -1,4 +1,5 @@
 const axios = require('axios')
+const cTable = require('console.table')
 
 axios.get('http://livathos.ayz.pl/szkolenie-get.php').then(res => {
     const data = res.data.sort( (a,b)=> new Date(b.date).getTime() - new Date(a.date).getTime())

@@ -13,8 +13,7 @@
 */
 function arrayFilter(array = [], removeThis) {
 
-    return array.filter(b => !removeThis.includes(b));
-    // return null
+    return null
 }
 
 
