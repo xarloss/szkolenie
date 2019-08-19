@@ -34,5 +34,12 @@ module.exports = function (msg) {
             const correct = 2
             expect(getSum(...array)).to.equal(correct)
         })
+        test('Test dla danych (116851354651316813245432165516513516543535416531351835138451681135135168465318135813516843138318, -15135135)', () => {
+            console.time('getSum')
+            const array = [116851354651316813245432165516513516543535416531351835138451681135135168465318135813516843138318, -15135135]
+            const correct = 6.827119541923909e+189
+            expect(getSum(...array)).to.equal(correct)
+            console.timeEnd('getSum')
+        })
     })
 };
