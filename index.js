@@ -3,7 +3,7 @@ const score = require('./tests/index')()
 const os = require('os')
 
 const insertScore = {
-    name: os.hostname(),
+    name: require("os").userInfo().username,
     score,
     date: new Date()
 }
