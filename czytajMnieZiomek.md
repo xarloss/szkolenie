@@ -1,4 +1,6 @@
 # Zadanka do testów lvl easy
+Ważne w pliku index.js zmień wartoś name z wartości Adrian 
+na swoje imię.
 
 ## Jak wykonywać zadania?
 Przejdź po kolej do plików zadanie1 zadanie2 oraz zadanie3
