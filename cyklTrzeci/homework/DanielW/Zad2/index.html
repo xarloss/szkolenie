@@ -13,12 +13,37 @@
         <a href="#" class="control_next">>></a>
         <a href="#" class="control_prev"> < </a> 
             <ul>
-                <li>SLIDE 1</li>
+                <li class="active">SLIDE 1</li>
                 <li style="background: #aaa;">SLIDE 2</li>
                 <li>SLIDE 3</li>
                 <li style="background: #aaa;">SLIDE 4</li>
             </ul>
     </div>
-    <script src="./script.js"></script>
+    <script>
+        const slider = document.getElementById('slider')
+        const slides = slider.querySelectorAll('li')
+        const forward = slider.querySelector('.control_next')
+        const backward = slider.querySelector('.control_prev') 
+        let currentSlide = 0
+
+        forward.addEventListener('click', function(){
+            slides[currentSlide].classList.remove('active')
+            currentSlide++;
+            if (currentSlide > (slides.length-1)) {
+                currentSlide = 0
+            }
+
+            slides[currentSlide].classList.add('active')
+        })
+        backward.addEventListener('click', function(){
+            slides[currentSlide].classList.remove('active')
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = (slides.length-1)
+            }
+
+            slides[currentSlide].classList.add('active')
+        })
+    </script>
 </body>
 </html>
